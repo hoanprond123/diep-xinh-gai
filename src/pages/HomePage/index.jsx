@@ -1,6 +1,7 @@
 import { Button, Input, Modal } from "antd";
 import React, { useEffect, useState } from "react";
 import "./index.css";
+import song from './track1.mp3'
 function HomePage() {
   const [visibleModal, setVisibleModal] = useState(true);
   const [randomTop, setRandomTop] = useState(200)
@@ -10,12 +11,16 @@ function HomePage() {
   const [visibleThirdModal, setVisibleThirdModal] = useState(false)
   const [value, setValue] = useState([])
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  
   // emoji icon
-
+  
   const array = ["Bởi", "vì", "anh", "tốt", "bụng", "và", "dễ", "thương", "á", ""]
 
   const handleClick = () => {
     setVisibleModal(false);
+    let audio = new Audio(song)
+    audio.play()
   };
 
   const handleOnMouse = (e) => {
@@ -37,6 +42,7 @@ function HomePage() {
       setValue([])
     }
   },[value])
+
 
   const handleCloseSecondModal = () => {
     setVisibleSecondModal(false)
