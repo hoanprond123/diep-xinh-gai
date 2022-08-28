@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react'
+import {Button} from 'antd'
+import HomePage from './pages/HomePage/index'
+import "./app.css"
 function App() {
+  const [randomTop, setRandomTop] = useState(300)
+  const [randomLeft, setRandomLeft] = useState(300)
+
+  const handleOnMouse = (e) => {
+    setRandomTop(Math.random() * e.clientX + 200)
+    setRandomLeft(Math.random() * e.clientY + 200)
+  }
+  console.log(randomTop)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container" style={{height: "100vh"}}>
+      {/* <Button style={{left: `${randomLeft}px`, top: `${randomTop}px`, position: "absolute"}} type="primary" 
+      onMouseEnter={handleOnMouse}
+      >Vao day</Button> */}
+      <HomePage />
     </div>
   );
 }

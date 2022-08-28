@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,900&display=swap");
+
+.home-page-image {
+  width: 100%;
+  height: 550px;
+  background-image: url("./diepcute.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.home-page-modal .ant-modal-content {
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #9966ff 0%, #ff99cc 100%);
+}
+
+.home-page-button .ant-btn {
+  padding: 6.4px 36px;
+}
+
+/*Content*/
+.content {
+  font-family: "DynaPuff", cursive;
+  height: 100%;
+}
+
+.content-button {
+  height: 500px;
+  position: relative;
+}
+
+.content-button .ant-btn:first-child {
+  position: absolute;
+  /* top: 35%;
+    left: 30%; */
+}
+
+.content-button .ant-btn:last-child {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+}
+
+.home-page-second-modal .ant-modal-content {
+  border-radius: 15px;
+  background-color: #ffc0cb;
+}
+
+.home-page-second-modal .ant-modal {
+    top: 300px;
+
+}
+
+.home-page-second-modal h1 {
+    text-align: center;
+}
+
+.home-page-second-modal .second-modal-button {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-page-third-modal .ant-modal{
+    top: 300px;
+}
+
+.home-page-third-modal .ant-modal-content{
+    border-radius: 15px;
+  background-color: #ffc0cb;
+}
+
+.home-page-third-modal h1 {
+    text-align: center;
+}
+
