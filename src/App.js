@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {Button} from 'antd'
 import HomePage from './pages/HomePage/index'
-// import "./app.css"
+import "./app.css"
 function App() {
   const [randomTop, setRandomTop] = useState(300)
   const [randomLeft, setRandomLeft] = useState(300)
